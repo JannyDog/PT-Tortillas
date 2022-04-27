@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+.container {
+	align: center;
+	display: grid;
+	height: 600px;
+	width: 1000px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 100px 100px 100px 100px;
+	grid-template-areas:
+      "bluebox bluebox bluebox"
+      "yellowbox greenbox redbox"
+	  "yellowbox greenbox redbox"
+      "pinkbox pinkbox pinkbox";
+}
+
+.bluebox {
+	border-radius: 0px 50px 50px 0px;
+	Background-color: blue; 
+	grid-area: bluebox;
+	font-family: "Arial"
+}
+
+.yellowbox {
+	border-radius: 0px 0px 50px 0px;
+	grid-area: yellowbox;
+	Background-color: yellow; 
+	font-family: "Arial"
+}
+
+.greenbox {
+	border-radius: 0px 0px 50px 50px;
+	grid-area:greenbox;
+	width: 450px;
+	Background-color: green; 
+	font-family: "Arial"
+} 
+
+.redbox {
+	border-radius: 0px 50px 50px 50px;
+	grid-area: redbox;
+	Background-color: red; 
+	font-family: "Arial"
+} 
+
+.pinkbox {
+	border-radius: 0px 50px 50px 50px;
+	grid-area: pinkbox;
+	Background-color: pink; 
+	font-family: "Arial"
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="bluebox"><b>BLUE BOX</b></div>
+		<div class="yellowbox"><b>YELLOW BOX</b></div>
+		<div class="greenbox"><b>GREEN BOX</b></div>
+		<div class="redbox"><b>RED BOX</b></div>
+		<div class="pinkbox"><b>PINK BOX</b></div>
+	</div>
+</body>
+</html>
